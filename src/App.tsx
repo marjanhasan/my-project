@@ -1,4 +1,5 @@
 import About from "./pages/About/About";
+import CommunityMembership from "./pages/CommunityMembership/CommunityMembership";
 import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
 import Service from "./pages/Service/Service";
@@ -9,7 +10,8 @@ export default function hello() {
       {/* <Contact /> */}
       {/* <About /> */}
       {/* <Home /> */}
-      <Service />
+      {/* <Service /> */}
+      <CommunityMembership />
     </div>
   );
 }

@@ -17,7 +17,7 @@ export default function StartProjectSection() {
           <p className="text-lg text-[#FEFEFE] mb-10 max-w-xl">
             Send us a message and let's talk about what you're hoping to create.
           </p>
-          <button className="bg-[#FEFEFE] text-[#121417] font-medium py-3 px-6 rounded-[60px] cursor-pointer leading-[150%] tracking-[0.5%]">
+          <button className="bg-[#FEFEFE] text-[#121417] font-medium py-3 px-6 rounded-[60px]  transition hover:opacity-90 cursor-pointer leading-[150%] tracking-[0.5%]">
             Contact with Us
           </button>
         </div>
