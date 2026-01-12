@@ -1,3 +1,5 @@
+import React from "react";
+
 interface ButtonConfig {
   label: string;
   onClick?: () => void;
@@ -6,7 +8,7 @@ interface ButtonConfig {
   borderColor?: string;
 }
 
-interface CtaSectionProps {
+interface StartProjectSectionProps {
   title: string;
   subtitle?: string;
   backgroundImage?: string;
@@ -16,7 +18,7 @@ interface CtaSectionProps {
   overlay?: boolean;
 }
 
-export default function CtaSection({
+export default function StartProjectSection({
   title,
   subtitle,
   backgroundImage,
@@ -24,7 +26,7 @@ export default function CtaSection({
   textColor = "#FFFFFF",
   buttons = [],
   overlay = true,
-}: CtaSectionProps) {
+}: StartProjectSectionProps) {
   const backgroundStyle = backgroundImage
     ? {
         backgroundImage: `${
@@ -38,33 +40,30 @@ export default function CtaSection({
   return (
     <section className="w-full py-16 px-5 lg:px-0">
       <div
-        className="relative w-full max-w-6xl mx-auto min-h-115 h-auto bg-cover bg-center rounded-2xl"
+        className="relative w-full max-w-6xl mx-auto h-[460px] bg-cover bg-center rounded-2xl"
         style={backgroundStyle}
       >
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
           <h1
-            className="text-3xl sm:text-4xl lg:text-5xl font-medium mb-4 sm:mb-6 max-w-xl"
+            className="text-5xl font-medium mb-6 max-w-xl"
             style={{ color: textColor }}
           >
             {title}
           </h1>
 
           {subtitle && (
-            <p
-              className="text-base sm:text-lg mb-6 sm:mb-10 max-w-xl"
-              style={{ color: textColor }}
-            >
+            <p className="text-lg mb-10 max-w-xl" style={{ color: textColor }}>
               {subtitle}
             </p>
           )}
 
           {buttons.length > 0 && (
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full sm:w-auto">
+            <div className="flex gap-4 flex-wrap justify-center">
               {buttons.map((btn, index) => (
                 <button
                   key={index}
                   onClick={btn.onClick}
-                  className="w-full sm:w-auto px-6 py-3 rounded-[60px] font-medium transition hover:opacity-90 cursor-pointer"
+                  className="px-6 py-3 rounded-[60px] font-medium transition hover:opacity-90"
                   style={{
                     backgroundColor: btn.bgColor || "#FFFFFF",
                     color: btn.textColor || "#121417",

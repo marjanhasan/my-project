@@ -2,8 +2,8 @@ export default function Headings({
   title,
   subtitle,
 }: {
-  title: string;
-  subtitle: string;
+  title?: string;
+  subtitle?: string;
 }) {
   return (
     <div className="max-w-213 mx-auto text-center px-5 lg:px-0">

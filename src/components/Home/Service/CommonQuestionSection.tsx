@@ -1,7 +1,5 @@
-import Accordion, {
-  type AccordionItem,
-} from "../../components/accordion/Accordion";
-import Headings from "../../components/headings/Headings";
+import Headings from "../../headings/Headings";
+import Accordion, { type AccordionItem } from "../../accordion/Accordion";
 
 const faqData: AccordionItem[] = [
   {

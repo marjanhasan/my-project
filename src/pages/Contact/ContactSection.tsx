@@ -18,21 +18,21 @@ export default function ContactSection() {
           description="Our friendly team is ready to help."
           value="support@telehealth.com"
         >
-          <FaEnvelope size={24} color="#121417" />
+          <FaEnvelope size={24} color="#3A0E1F" />
         </ContactCard>
         <ContactCard
           title="Phone"
           description="Available Mon - Fri from 8am to 5 pm"
           value="+123 - 456 -789"
         >
-          <MdOutlinePhoneInTalk size={24} color="#121417" />
+          <MdOutlinePhoneInTalk size={24} color="#3A0E1F" />
         </ContactCard>
         <ContactCard
           title="Office Location"
           description="Come and Say hello at our office HQ."
           value="350 5th Avenue, Floor 21 Florida."
         >
-          <IoMdMap size={24} color="#121417" />
+          <IoMdMap size={24} color="#3A0E1F" />
         </ContactCard>
       </div>
     </section>
