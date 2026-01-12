@@ -24,7 +24,7 @@ export default function GetInTouchSection() {
           {/* Right Side - Form Card */}
           <div className="lg:w-1/2 bg-white p-10 flex flex-col justify-center rounded-2xl overflow-hidden">
             {/* Title */}
-            <h2 className="text-3xl font-medium text-center mb-6 text-[#16181C]">
+            <h2 className="text-3xl font-medium text-center mb-6 text-[#16181C]  transition hover:opacity-90">
               Send Us a Message
             </h2>
 
@@ -72,7 +72,7 @@ export default function GetInTouchSection() {
             </div>
 
             {/* Button */}
-            <button className="w-full bg-[#2E513E] text-white py-3 rounded-md cursor-pointer">
+            <button className="w-full bg-[#2E513E] text-white py-3 rounded-md cursor-pointer  transition hover:opacity-90">
               Send Message
             </button>
           </div>

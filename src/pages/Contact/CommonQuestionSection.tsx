@@ -37,7 +37,7 @@ export default function CommonQuestionSection() {
         title="Common Questions"
         subtitle="Frequently Asked Questions"
       />
-      <Accordion items={faqData} />
+      <Accordion items={faqData} bgColor="#ECEFDE" iconColor="#636B2F" />
     </section>
   );
 }
